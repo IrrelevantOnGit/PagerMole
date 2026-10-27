@@ -1,0 +1,79 @@
+# =====================================================================
+# PagerMole DCS — Git Ignore Rules
+# =====================================================================
+
+# ── Python Bytecode & Cache ──────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.pyo
+
+# ── Standalone Executable Builds & PyInstaller Output ────────────────
+PagerMole_DCS/
+PagerWolf_DCS/
+build/
+dist/
+native_build/
+native_build_work/
+*.manifest
+*.spec.bak
+
+# ── Generated Signal Audio & WAV Files ───────────────────────────────
+data/generated/*.wav
+data/generated/check_plots/
+*.wav
+
+# ── Generated Test Plots & Image Exports ─────────────────────────────
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+
+# ── Extracted Source Archives & Third-Party Tree Residue ─────────────
+_extracted/
+
+# ── Test & Quality Tools Cache ───────────────────────────────────────
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# ── Virtual Environments ─────────────────────────────────────────────
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# ── Editor & IDE Configurations ──────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ── Logs & Temporary Files ───────────────────────────────────────────
+*.log
+*.tmp
+temp/
+tmp/
+
+# ── OS Generated Files ───────────────────────────────────────────────
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes

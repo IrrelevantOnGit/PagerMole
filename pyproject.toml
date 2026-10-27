@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "dcs"
+version = "0.1.0"
+description = "Digital Communications Suite — Unified orchestrator for Dire Wolf and multimon-ng"
+readme = "README.md"
+license = {text = "GPL-2.0"}
+requires-python = ">=3.11"
+authors = [
+    {name = "DCS Project"}
+]
+
+dependencies = [
+    "numpy>=1.26,<3.0",
+    "scipy>=1.11,<2.0",
+    "matplotlib>=3.8,<4.0",
+    "PyQt6>=6.6,<7.0",
+]
+
+[project.scripts]
+pagermole-native = "dcs.app_gui:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dcs*"]
+
